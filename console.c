@@ -18,7 +18,7 @@
 #include "report.h"
 
 /* Some global values */
-bool simulation = false;
+int simulation = false;
 static cmd_ptr cmd_list = NULL;
 static param_ptr param_list = NULL;
 static bool block_flag = false;
@@ -56,7 +56,7 @@ static int fd_max = 0;
 /* Parameters */
 static int err_limit = 5;
 static int err_cnt = 0;
-static bool echo = 0;
+static int echo = 0;
 
 static bool quit_flag = false;
 static char *prompt = "cmd> ";
